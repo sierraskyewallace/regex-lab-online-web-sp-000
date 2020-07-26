@@ -26,5 +26,9 @@ end
 
 
 def valid_phone_number?(phone)
-
+ if phone.match(/\b\(?\d{3}\)?\s?-?\d{3}-?\s?\d{4}\b/)
+   return true
+ else
+   false
+ end
 end
